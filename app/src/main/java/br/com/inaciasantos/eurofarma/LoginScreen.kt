@@ -77,7 +77,7 @@ fun LoginScreen(navController: NavController) {
 
             Spacer(modifier = Modifier.height(16.dp))
 
-            // ✅ CAMPO SENHA
+            //CAMPO SENHA
             OutlinedTextField(
                 value = senha,
                 onValueChange = { senha = it },
@@ -95,7 +95,6 @@ fun LoginScreen(navController: NavController) {
 
             Spacer(modifier = Modifier.height(24.dp))
 
-            // ✅ BOTÃO AMARELO
             Button(
                 onClick = {
                     navController.navigate("model3d")

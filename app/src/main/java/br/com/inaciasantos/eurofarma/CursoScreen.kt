@@ -46,7 +46,7 @@ private val Cinza       = Color(0xFF8A9BB5)
 private val Sucesso     = Color(0xFF00E5A0)
 private val CardGray    = Color(0xFF1C1C1E)
 
-// ── Modelos ──────────────────────────────────────────────────────
+//Modelos
 data class Licao(
     val titulo: String,
     val subtitulo: String = "",
@@ -105,7 +105,7 @@ fun CursoScreen(navController: NavController, titulo: String) {
             .fillMaxSize()
             .background(BgDeep)
     ) {
-        // Orb decorativo de fundo
+
         Box(
             modifier = Modifier
                 .size(280.dp)
@@ -120,7 +120,7 @@ fun CursoScreen(navController: NavController, titulo: String) {
                 .verticalScroll(rememberScrollState())
         ) {
 
-            // ── TopBar ───────────────────────────────────────────
+            //TopBar
             Row(
                 modifier = Modifier
                     .fillMaxWidth()
@@ -155,7 +155,7 @@ fun CursoScreen(navController: NavController, titulo: String) {
                 )
             }
 
-            // ── Player de Vídeo ──────────────────────────────────
+            //Vídeo
             Box(
                 modifier = Modifier
                     .fillMaxWidth()
@@ -170,7 +170,7 @@ fun CursoScreen(navController: NavController, titulo: String) {
                     modifier = Modifier.fillMaxSize()
                 )
 
-                // Overlay gradiente
+                //gradiente
                 Box(
                     modifier = Modifier
                         .fillMaxSize()
@@ -181,7 +181,7 @@ fun CursoScreen(navController: NavController, titulo: String) {
                         )
                 )
 
-                // Botão Play
+                //BotãoPlay
                 Box(
                     modifier = Modifier
                         .size(62.dp)
@@ -198,7 +198,7 @@ fun CursoScreen(navController: NavController, titulo: String) {
                     )
                 }
 
-                // Badge de views
+                //Badge de views
                 Row(
                     modifier = Modifier
                         .align(Alignment.TopEnd)
@@ -218,7 +218,7 @@ fun CursoScreen(navController: NavController, titulo: String) {
                     Text("13.9k", color = Branco, fontSize = 11.sp, fontWeight = FontWeight.SemiBold)
                 }
 
-                // Badge "Ao vivo"
+                //Ao viv
                 Row(
                     modifier = Modifier
                         .align(Alignment.TopStart)
@@ -239,7 +239,7 @@ fun CursoScreen(navController: NavController, titulo: String) {
                 }
             }
 
-            // ── Header do Curso ──────────────────────────────────
+            //Header do Curso
             Box(
                 modifier = Modifier
                     .fillMaxWidth()
@@ -289,7 +289,7 @@ fun CursoScreen(navController: NavController, titulo: String) {
 
                     Spacer(modifier = Modifier.height(12.dp))
 
-                    // Barra de progresso total
+                    //Barradeprogressototal
                     Box(
                         modifier = Modifier
                             .fillMaxWidth()
@@ -309,7 +309,7 @@ fun CursoScreen(navController: NavController, titulo: String) {
 
                     Spacer(modifier = Modifier.height(14.dp))
 
-                    // Tags
+
                     Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
                         Row(
                             verticalAlignment = Alignment.CenterVertically,
@@ -349,7 +349,7 @@ fun CursoScreen(navController: NavController, titulo: String) {
             //HorizontalDivider(color = Color(0xFF1A2A45), thickness = 1.dp)
             Spacer(modifier = Modifier.height(20.dp))
 
-            // ── Instrutor / Descrição ────────────────────────────
+
             Column(
                 modifier = Modifier
                     .fillMaxWidth()
@@ -411,7 +411,7 @@ fun CursoScreen(navController: NavController, titulo: String) {
 
             Spacer(modifier = Modifier.height(22.dp))
 
-            // ── Módulos e Lições ─────────────────────────────────
+
             modulos.forEach { modulo ->
                 Row(
                     modifier = Modifier
@@ -487,7 +487,7 @@ fun CursoScreen(navController: NavController, titulo: String) {
             //HorizontalDivider(color = Color(0xFF1A2A45), thickness = 1.dp)
             Spacer(modifier = Modifier.height(22.dp))
 
-            // ── Comentários ──────────────────────────────────────
+
             Column(
                 modifier = Modifier
                     .fillMaxWidth()
@@ -544,7 +544,7 @@ fun CursoScreen(navController: NavController, titulo: String) {
 
                 Spacer(modifier = Modifier.height(16.dp))
 
-                // Campo de mensagem
+                //mensagem
                 Row(
                     verticalAlignment = Alignment.CenterVertically,
                     modifier = Modifier.fillMaxWidth()
@@ -593,7 +593,7 @@ fun CursoScreen(navController: NavController, titulo: String) {
     }
 }
 
-// ── Componentes auxiliares ───────────────────────────────────────
+//Componentes
 
 @Composable
 fun LicaoCard(licao: Licao, isFirst: Boolean) {

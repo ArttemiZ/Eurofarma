@@ -92,7 +92,7 @@ fun BottomBar(navController: NavController) {
         modifier = Modifier
             .fillMaxWidth()
             .height(70.dp)
-            .background(Color.Transparent), // 👈 agora transparente
+            .background(Color.Transparent),
         horizontalArrangement = Arrangement.SpaceEvenly,
         verticalAlignment = Alignment.CenterVertically
     ) {

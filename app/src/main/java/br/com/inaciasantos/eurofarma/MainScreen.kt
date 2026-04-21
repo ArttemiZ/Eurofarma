@@ -72,7 +72,7 @@ fun MainScreen(navController: NavController) {
                 .padding(bottom = 70.dp)
         ) {
 
-            // ───── HEADER COM IMAGEM ─────
+            //HEADER COM IMAGEM
             Box(
                 modifier = Modifier
                     .fillMaxWidth()
@@ -85,7 +85,7 @@ fun MainScreen(navController: NavController) {
                     modifier = Modifier.fillMaxSize()
                 )
 
-                // LOGO no topo
+                //lOGO no topo
                 Image(
                     painter = painterResource(id = R.drawable.logo_eurofarma),
                     contentDescription = "Logo Eurofarma",
@@ -107,7 +107,7 @@ fun MainScreen(navController: NavController) {
                         text = "Treinamentos",
                         color = Color.White,
                         fontSize = 37.sp,
-                        fontFamily = BodoniFont,
+                        fontWeight = FontWeight.ExtraBold,
                         //fontWeight = FontWeight.Light,
                         //fontStyle = FontStyle.Italic
 
@@ -117,7 +117,7 @@ fun MainScreen(navController: NavController) {
 
             Spacer(modifier = Modifier.height(16.dp))
 
-            // ───── CARDS — um abaixo do outro, largura total ─────
+            //CARDS
             Column(
                 modifier = Modifier
                     .fillMaxWidth()
@@ -126,7 +126,7 @@ fun MainScreen(navController: NavController) {
             ) {
                 cards.forEach { (titulo, descricao, progresso) ->
                     Card(
-                        modifier = Modifier.fillMaxWidth(), // ✅ largura total
+                        modifier = Modifier.fillMaxWidth(),
                         shape = RoundedCornerShape(12.dp),
                         colors = CardDefaults.cardColors(containerColor = Color.White),
                         elevation = CardDefaults.cardElevation(4.dp)
@@ -138,7 +138,7 @@ fun MainScreen(navController: NavController) {
                             verticalAlignment = Alignment.CenterVertically,
                             horizontalArrangement = Arrangement.spacedBy(12.dp)
                         ) {
-                            // miniatura
+                            //miniatura
                             Box(
                                 modifier = Modifier
                                     .size(60.dp)
@@ -146,7 +146,7 @@ fun MainScreen(navController: NavController) {
                                     .background(Color(0xFFE0E0E0))
                             )
 
-                            // conteúdo
+                            //conteúdo
                             Column(modifier = Modifier.weight(1f)) {
                                 Text(
                                     text = titulo,
@@ -194,7 +194,7 @@ fun MainScreen(navController: NavController) {
 
             Spacer(modifier = Modifier.height(20.dp))
 
-            // ───── BLOCOS ─────
+
             Column(
                 modifier = Modifier
                     .fillMaxWidth()

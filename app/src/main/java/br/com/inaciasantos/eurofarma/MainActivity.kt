@@ -19,7 +19,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
 
 
-        // ✅ inicializa o Filament ANTES de qualquer coisa
+        //Filament
         Utils.init()
 
         setContent {
